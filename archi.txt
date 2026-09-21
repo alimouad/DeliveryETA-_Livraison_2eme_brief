@@ -1,0 +1,123 @@
+                    ┌──────────────────────┐
+                    │  Food delivery.csv   │
+                    │      RAW DATA        │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │      CLEANING        │
+                    │                      │
+                    │ • Missing values     │
+                    │ • Duplicates         │
+                    │ • Outliers           │
+                    │ • Data types         │
+                    │ • Text cleaning      │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │   FEATURE ENGINEERING│
+                    │                      │
+                    │ • distance_km        │
+                    │ • order_hour         │
+                    │ • peak_hour          │
+                    │ • weekend            │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │         EDA          │
+                    │                      │
+                    │ • Statistics         │
+                    │ • Distributions      │
+                    │ • Correlations       │
+                    │ • Relationships      │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │     TRAIN / TEST     │
+                    │        80 / 20       │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │   PREPROCESSING      │
+                    │                      │
+                    │ Numerical            │
+                    │ → Imputation         │
+                    │ → Scaling            │
+                    │                      │
+                    │ Categorical          │
+                    │ → Imputation         │
+                    │ → OneHotEncoding     │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │      PIPELINE        │
+                    └──────────┬───────────┘
+                               │
+             ┌─────────────────┼─────────────────┐
+             │                 │                 │
+             ▼                 ▼                 ▼
+      Linear Regression   Random Forest    Gradient Boosting
+             │                 │                 │
+             └─────────────────┼─────────────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │     EVALUATION       │
+                    │                      │
+                    │ MAE                  │
+                    │ MSE                  │
+                    │ RMSE                 │
+                    │ R²                   │
+                    │ Adjusted R²          │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │  HYPERPARAMETER      │
+                    │      TUNING           │
+                    │ RandomizedSearchCV   │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    FINAL MODEL       │
+                    │    .joblib           │
+                    └──────────┬───────────┘
+                               │
+                    ┌──────────┴──────────┐
+                    │                     │
+                    ▼                     ▼
+              Streamlit               API
+              Application             FastAPI
+              (obligatoire)           (Bonus)
+
+
+
+DATA
+ ↓
+CLEANING
+ ↓
+EDA
+ ↓
+FEATURE ENGINEERING
+ ↓
+TRAIN / TEST
+ ↓
+PREPROCESSING PIPELINE
+ ↓
+4 MODELS
+ ↓
+EVALUATION
+ ↓
+HYPERPARAMETER TUNING
+ ↓
+FINAL MODEL
+ ↓
+STREAMLIT
+ ↓
+ETA EN MINUTES              
